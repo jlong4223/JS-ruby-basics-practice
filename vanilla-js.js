@@ -3,5 +3,18 @@
 const howManySeconds = (hours) => {
   console.log(hours * 3600);
 };
-
 howManySeconds(2);
+// =====================================
+const giveMeSomething = (a) => {
+  console.log("something " + a);
+};
+giveMeSomething("belongs to jared");
+
+// create function that returns amt of potatos in a string
+const countPotatoes = (str) => {
+  // let str = "";
+  console.log((str.match(/potatoes/g) || []).length);
+};
+
+countPotatoes("potatoespotatoesobenchickenpotatoes");
+// ==================================
