@@ -18,4 +18,5 @@ const countPotatoes = (str) => {
 
 countPotatoes("potatoespotatoesobenchickenpotatoes");
 // ==================================
-// Day 3 again
+// Day 3 again more functions will go here
+console.log("============= day 3 ===========");
