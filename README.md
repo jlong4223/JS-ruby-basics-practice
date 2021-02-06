@@ -8,5 +8,5 @@ The challenges will range from easy to expert level in time.
 
 ## Technologies:
 
-- ruby
-- javascript
+<img src="https://icongr.am/devicon/ruby-original.svg?size=128&color=currentColor" alt="ruby" width="40" height="40"/> 
+<img src="https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor" alt="javascript" width="40" height="40"/>
