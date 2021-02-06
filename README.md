@@ -9,4 +9,4 @@ The challenges will range from easy to expert level in time.
 ## Technologies:
 
 - ruby
-- javscript
+- javascript
