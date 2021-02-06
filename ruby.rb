@@ -34,3 +34,11 @@ def leap_year year
   end
 
 puts leap_year(2020)
+
+
+# write a method that reveres a string
+def reverse_it
+    word="word"
+    puts word.reverse
+end
+puts reverse_it
