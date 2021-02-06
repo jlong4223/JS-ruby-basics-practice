@@ -42,3 +42,15 @@ def reverse_it
     puts word.reverse
 end
 puts reverse_it
+
+# searching for an age in the array
+def search_ages age
+ ages=[10, 12, 4, 67, 100, 2]
+ if ages.include?(age)
+  puts "#{age} is in the array"
+ else
+   puts "#{false}, #{age} is not in the array"
+ end
+end
+
+search_ages(3)
