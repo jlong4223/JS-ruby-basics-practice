@@ -1,4 +1,4 @@
-# Javascript, Ruby and some Swift
+# Javascript and Ruby Practice
 
 This is a place that I go to practice code challenges and keep the basics fresh.
 
@@ -10,4 +10,3 @@ The challenges will range from easy to expert level in time.
 
 - ruby
 - javscript
-- swift
