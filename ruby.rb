@@ -60,8 +60,12 @@ search_ages(3)
 # given arguments, name, value (key-value pair), return an obj with the name and value as key-value pairs in the object
 
 def make_hash name, value
-  h = Hash[name: name, value: value]
-  puts "person:" , h
+  # below returns two seperate key-value pairs
+  # h = Hash[name: name, value: value]
+
+  # below returns the parameters as a key-value pair
+  h = Hash[name => value]
+  puts h
 end
 
 make_hash 'jared', 25
