@@ -18,7 +18,6 @@ const countPotatoes = (str) => {
 
 countPotatoes("potatoespotatoesobenchickenpotatoes");
 // ==================================
-console.log("============= day 3 ===========");
 
 // reversing a word
 function reverseWord(word) {
@@ -26,6 +25,7 @@ function reverseWord(word) {
 }
 reverseWord("word");
 
+// ==================================
 // searching for an age
 function searchForAge(age) {
   let ages = [1, 2, 5, 657, 45, 23];
@@ -36,3 +36,14 @@ function searchForAge(age) {
   }
 }
 searchForAge(3);
+
+// =========================================
+// given arguments, name, value (key-value pair), return an obj with the name and value as key-value pairs in the object
+
+function addName(name, value) {
+  const entries = new Map([[name, value]]);
+  // below will take an array and turn it into an object
+  const object = Object.fromEntries(entries);
+  console.log("person:", object);
+}
+addName("jared", 25);
