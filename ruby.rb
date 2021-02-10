@@ -20,6 +20,9 @@ def giveMeSomething name
 end
 puts giveMeSomething("Jared")
 
+# ================================
+# checking if a year is a leap-year 
+# TODO transfer this one to js
 def leap_year year
     if year % 4 == 0
       if year % 100 == 0

@@ -11,6 +11,7 @@ const giveMeSomething = (a) => {
 giveMeSomething("belongs to jared");
 
 // create function that returns amt of potatos in a string
+// TODO transfer this one to ruby
 const countPotatoes = (str) => {
   // let str = "";
   console.log((str.match(/potatoes/g) || []).length);
