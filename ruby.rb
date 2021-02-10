@@ -5,7 +5,7 @@ end
 puts hello
 
 
-puts "======================"
+# puts "=========================================="
 
 def howManySeconds num
     num * 3600
@@ -13,7 +13,7 @@ end
 
 puts howManySeconds(2)
 
-puts "======================"
+# puts "============================================"
 
 def giveMeSomething name
     name + " is the coolest"
@@ -35,7 +35,7 @@ def leap_year year
 
 puts leap_year(2020)
 
-
+# ======================================================
 # write a method that reveres a string
 def reverse_it
     word="word"
@@ -54,3 +54,14 @@ def search_ages age
 end
 
 search_ages(3)
+
+
+# =========================================
+# given arguments, name, value (key-value pair), return an obj with the name and value as key-value pairs in the object
+
+def make_hash name, value
+  h = Hash[name: name, value: value]
+  puts "person:" , h
+end
+
+make_hash 'jared', 25
