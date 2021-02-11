@@ -48,3 +48,18 @@ function addName(name, value) {
   console.log("person:", object);
 }
 addName("jared", 25);
+
+// =======================================
+// write a function that multiplies values in an array
+
+function multiplyArray() {
+  let sum = 1;
+  let array = [1, 2, 3];
+
+  for (let i = 0; i < array.length; i++) {
+    sum = sum * array[i];
+  }
+  console.log(sum);
+}
+
+multiplyArray();

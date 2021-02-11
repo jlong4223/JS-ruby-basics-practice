@@ -72,3 +72,14 @@ def make_hash name, value
 end
 
 make_hash 'jared', 25
+
+
+# ===============================
+# write a method that multiplies all values in an array
+
+def multiplyArray
+  numbers=[1, 2, 3, 4]
+  puts numbers.inject(:*)
+end
+
+multiplyArray
