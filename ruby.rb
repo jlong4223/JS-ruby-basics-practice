@@ -98,3 +98,22 @@ def rental_car_cost(d)
 end
 
 rental_car_cost(2)
+
+# ================================
+# Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+
+def greet name, owner
+  if name.downcase == owner || name.downcase == owner.downcase
+    "Hello Boss"
+  else 
+    "Hello guest"
+  end
+end
+
+puts greet('Jared', 'jared')
+# better way using ternary below: 
+
+def greetTwo(name, owner)
+  name == owner ? "Hello Boss" : "Hello Guest"
+end
+puts greetTwo "Jared", "Tom"

@@ -78,3 +78,10 @@ function rentalCarCost(d) {
 }
 
 console.log("rental car cost: " + rentalCarCost(2));
+
+// Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+function greet(name, owner) {
+  console.log(name === owner ? "Hello Boss" : "Hello Guest");
+}
+
+greet("Jared", "Jeffrey");
