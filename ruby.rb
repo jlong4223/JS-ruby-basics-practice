@@ -117,3 +117,12 @@ def greetTwo(name, owner)
   name == owner ? "Hello Boss" : "Hello Guest"
 end
 puts greetTwo "Jared", "Tom"
+
+
+# =====================================
+# square every digit of a number and concatenate them
+def square_digits num
+  num.to_s.split('').map{|num| num.to_i*num.to_i}.join.to_i
+end
+
+puts square_digits(3212)

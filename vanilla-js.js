@@ -85,3 +85,18 @@ function greet(name, owner) {
 }
 
 greet("Jared", "Jeffrey");
+
+// =========================================
+// square every digit of a number and concatenate them
+function squareDigits(num) {
+  return Number(
+    ("" + num)
+      .split("")
+      .map(function (val) {
+        return val * val;
+      })
+      .join("")
+  );
+}
+
+console.log(squareDigits(3212));
