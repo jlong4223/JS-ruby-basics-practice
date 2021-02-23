@@ -100,3 +100,24 @@ function squareDigits(num) {
 }
 
 console.log(squareDigits(3212));
+
+// =====================================
+// Complete the function so that it finds the mean of the three scores passed to it and returns the letter value associated with that grade.
+
+function getGrade(s1, s2, s3) {
+  let avg = (s1 + s2 + s3) / 3;
+
+  console.log(
+    avg >= 90 && avg <= 100
+      ? "A"
+      : avg >= 80
+      ? "B"
+      : avg >= 70
+      ? "C"
+      : avg >= 60
+      ? "D"
+      : "F"
+  );
+}
+
+getGrade(60, 93, 93);
