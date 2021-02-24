@@ -133,11 +133,11 @@ def get_grade(s1, s2, s3)
   avg = (s1 + s2 + s3)/3
   
   avg >= 90 && avg <=100 ? "A" : 
-  avg >= 80 && avg < 90 ? "B" : 
-  avg >= 70 && avg < 80 ? "C" : 
-  avg >= 60 && avg < 70 ? "D" : 
+  avg >= 80 ? "B" : 
+  avg >= 70 ? "C" : 
+  avg >= 60 ? "D" : 
   "F" 
   
 end
 
-puts get_grade(90, 92, 92)
+puts get_grade(80, 92, 92)
