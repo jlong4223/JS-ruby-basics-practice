@@ -141,3 +141,11 @@ def get_grade(s1, s2, s3)
 end
 
 puts get_grade(80, 92, 92)
+
+# ======================================
+# Write a function which converts the input string to uppercase.
+def make_upper_case(str)
+  puts str.upcase
+end
+
+make_upper_case 'hello'

@@ -121,3 +121,11 @@ function getGrade(s1, s2, s3) {
 }
 
 getGrade(60, 93, 93);
+
+// ======================================
+// a function that converts a string to uppercase
+
+function makeUpperCase(str) {
+  console.log(str.toUpperCase());
+}
+makeUpperCase("hello");
