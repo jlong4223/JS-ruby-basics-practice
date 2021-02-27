@@ -136,3 +136,13 @@ function descendingOrder(n) {
   console.log(+("" + n).split("").sort().reverse().join(""));
 }
 descendingOrder(123453);
+
+// ===================================
+// return the sum of all of the positives numbers in the array
+let positiveSum = (arr) => {
+  sum = arr.reduce((a, b) => {
+    return b > 0 ? b + a : a;
+  }, 0);
+  console.log(sum);
+};
+positiveSum([3, -1, 3, -10]);

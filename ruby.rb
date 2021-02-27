@@ -158,3 +158,20 @@ def descending_order(n)
 end
 
 puts descending_order 1234659
+
+
+#  ===================================
+# return the sum of all of the positives numbers in the array
+
+# select method to filter through array and only add(.sum) if i is greater than 0
+def positive_sum(arr)
+  arr.select {|i| i > 0}.sum
+end
+
+puts positive_sum([0, 3, 3, -9])
+
+# another way: (shortcut to using select method to check for pos num and using .sum to add them)
+def positive_arr_sum arr
+  arr.select(&:positive?).sum
+end 
+puts positive_arr_sum([0, 3, 3, -9])
