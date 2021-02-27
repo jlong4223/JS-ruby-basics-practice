@@ -129,3 +129,10 @@ function makeUpperCase(str) {
   console.log(str.toUpperCase());
 }
 makeUpperCase("hello");
+
+// ======================================
+// make a function that can take any non-negative integer as an argument and return it with its digits in descending order.
+function descendingOrder(n) {
+  console.log(+("" + n).split("").sort().reverse().join(""));
+}
+descendingOrder(123453);

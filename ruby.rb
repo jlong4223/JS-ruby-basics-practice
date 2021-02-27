@@ -149,3 +149,12 @@ def make_upper_case(str)
 end
 
 make_upper_case 'hello'
+
+# =====================================
+# make a function that can take any non-negative integer as an argument and return it with its digits in descending order.
+
+def descending_order(n)
+  n.to_s.split('').sort_by {|x| x}.join('').reverse.to_i
+end
+
+puts descending_order 1234659
