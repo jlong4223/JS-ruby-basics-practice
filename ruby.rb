@@ -99,6 +99,12 @@ end
 
 rental_car_cost(2)
 
+def rental_car_cost_two d
+  d >=7 ? (d * 40) - 50 : d >=3 ? (d * 40) - 20 : d < 3 ? d * 40 : 'n/a'
+end
+
+puts "rental car part 2: ", rental_car_cost_two(2)
+
 # ================================
 # Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
 
@@ -111,12 +117,13 @@ def greet name, owner
 end
 
 puts greet('Jared', 'jared')
-# better way using ternary below: 
 
+# better way using ternary below: 
 def greetTwo(name, owner)
-  name == owner ? "Hello Boss" : "Hello Guest"
+  name.downcase == owner || name.downcase == owner.downcase ? "Hello Boss" : "Hello Guest"
 end
-puts greetTwo "Jared", "Tom"
+puts "greetTwo:"
+puts greetTwo "Jared", "JARED"
 
 
 # =====================================
