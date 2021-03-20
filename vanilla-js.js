@@ -157,3 +157,12 @@ function hero(bullets, dragons) {
 }
 
 console.log(hero(4, 2));
+
+/* - If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
+
+Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't. */
+
+function lovefunc(flower1, flower2) {
+  console.log(flower1 % 2 !== flower2 % 2);
+}
+lovefunc(2, 6);

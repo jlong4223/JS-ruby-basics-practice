@@ -193,3 +193,21 @@ def hero bullets, dragons
 end
 
 puts hero 4,2
+
+
+# mapping a array with string numbers and returning integers
+def to_number_array(string_array)
+  string_array.map{|num| num.to_s.split('').join("").to_i}
+end
+
+puts to_number_array(["2", "3", "4"])
+
+# /* - If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love.
+
+# Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't. */
+
+def lovefunc( flower1, flower2 )
+  puts flower1 % 2 != flower2 % 2
+end
+
+lovefunc(2, 4)
