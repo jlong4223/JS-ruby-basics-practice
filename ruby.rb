@@ -194,7 +194,7 @@ end
 
 puts hero 4,2
 
-
+# ===================================
 # mapping a array with string numbers and returning integers
 def to_number_array(string_array)
   string_array.map{|num| num.to_s.split('').join("").to_i}
@@ -211,3 +211,12 @@ def lovefunc( flower1, flower2 )
 end
 
 lovefunc(2, 4)
+
+# another way:
+def lovefuncTwo f1, f2
+puts f1.even?  == f2.odd?
+end 
+
+lovefuncTwo(5,6)
+
+# ===================================
