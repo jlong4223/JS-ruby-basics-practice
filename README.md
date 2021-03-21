@@ -1,8 +1,10 @@
-# Javascript, Ruby and Others Practice
+# Javascript, Ruby, Python and Swift Practice
 
 This is a file with some basics practice.
 
 A goal of mine is to complete a code challenge in javascript and transfer it to ruby or vice-versa.
+
+This is also a place where I will be practicing/ learning Python & Swift.
 
 The challenges will range from easy to expert level in time.
 
