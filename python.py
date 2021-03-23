@@ -30,3 +30,35 @@ def heroTwo(bullets, dragons):
     return(bullets >= dragons * 2)
 
 print "== Hero Two Func: ", heroTwo(4, 1)
+
+# ======================================
+# double the integer and return it.
+def double_integer(i):
+    return(i*2)
+
+print(double_integer(2))
+
+# =====================================
+# Write a function which converts the input string to uppercase.
+def make_upper_case(s):
+    return(s.upper())
+
+print(make_upper_case('jared'))
+
+# =======================================
+# Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+# Use conditionals to return the proper message:
+
+def greet(name, owner):
+    if name == owner:
+       print('Hello Boss')
+    else:
+        print('hello guest')
+
+greet('jared', 'jared')
+
+# inline version 
+def greetTwo(name, owner):
+    print('Hello boss' if name == owner else 'Hello guest')
+
+greetTwo('jared', 'john')
