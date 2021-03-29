@@ -62,3 +62,12 @@ def greetTwo(name, owner):
     print('Hello boss' if name == owner else 'Hello guest')
 
 greetTwo('jared', 'john')
+
+
+# ========================================
+def remove_exclamation_marks(s):
+    print(s.replace("!", ""))
+
+remove_exclamation_marks("Jared! is! coding! python!")
+
+# TODO update mac python version

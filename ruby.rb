@@ -220,3 +220,21 @@ end
 lovefuncTwo(5,6)
 
 # ===================================
+# Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
+# I am using tr() to replace each ! with an empty string, therefore removing them
+
+def remove_exclamation_marks(s)
+  removeExca = s.tr('!', '')
+
+  puts removeExca
+end
+
+remove_exclamation_marks("the! cat! is! smelly!")
+
+# another way:
+def remove_exclamation_marks(s)
+  s.delete("!")
+end
+
+puts remove_exclamation_marks("Jared! is! the! coolest!")

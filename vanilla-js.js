@@ -166,3 +166,19 @@ function lovefunc(flower1, flower2) {
   console.log(flower1 % 2 !== flower2 % 2);
 }
 lovefunc(2, 6);
+
+// ==================================
+// Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
+// .filter is going through each element in the string and returning all of them if they do not equal a !
+
+let text = "this! is! a! sentence!";
+
+let removeExcla = text
+  .split("")
+  .filter((letter) => {
+    return letter != "!";
+  })
+  .join("");
+
+console.log(removeExcla);
