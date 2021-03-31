@@ -29,7 +29,7 @@ hero(3, 3)
 def heroTwo(bullets, dragons):
     return(bullets >= dragons * 2)
 
-print "== Hero Two Func: ", heroTwo(4, 1)
+print ('== Hero Two Func: ', heroTwo(4, 1))
 
 # ======================================
 # double the integer and return it.
@@ -63,11 +63,27 @@ def greetTwo(name, owner):
 
 greetTwo('jared', 'john')
 
-
 # ========================================
+# creates a function to remove exclamation marks in a givin string
 def remove_exclamation_marks(s):
     print(s.replace("!", ""))
 
 remove_exclamation_marks("Jared! is! coding! python!")
 
-# TODO update mac python version
+
+# ================================================
+# Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+def count_sheeps(sheep):
+    # result = filter(lambda x: x == True, sheep)
+    result = sum(x == True for x in sheep)
+    print(result)
+
+count_sheeps([True, False, True, True, False, True])
+
+# ===== another way: 
+
+def count_again(sheep):
+    return sheep.count(True)
+
+print(count_again([True, False, True]))

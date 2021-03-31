@@ -238,3 +238,12 @@ def remove_exclamation_marks(s)
 end
 
 puts remove_exclamation_marks("Jared! is! the! coolest!")
+
+# ===================================================
+# Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+def countSheeps array
+  array.select{|sheep| sheep == true}.length()
+end
+
+puts countSheeps([true, false, true, true, true, false, nil, true])
