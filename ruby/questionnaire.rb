@@ -79,7 +79,10 @@ loop do
             end
         end
 
-        puts "lets move on to our next set of questions"
+        puts "So let me clarify the information that I have:"
+        print "Your name is #{client.name.green}\n"
+        print "Your age is #{client.age.green}\n"
+        puts "Great, lets move on to our next set of questions"
         break
     end
 end
