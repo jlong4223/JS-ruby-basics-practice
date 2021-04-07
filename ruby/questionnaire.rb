@@ -50,10 +50,36 @@ loop do
 
     if get_answer == 'n'
         puts "Bye, hope to see you again soon...just kidding"
-        puts "Where is the money?"
+        puts "So, we're going to move on anyways..."
         # TODO add more
         break
     else
+        # asks initial question to get age
         puts "Lets continue #{client.name} :)"
+        print "So, how old are you? "
+
+        # setting the age to the response
+        get_age = gets.chomp.downcase
+        client.age = get_age
+
+        # clarifiying the age
+        puts "So, your name is #{client.name.green} and you are #{client.age.green}? (Y)es or (N)o"
+        get_response = gets.chomp.downcase
+        
+        # if the age clarified is wrong, will keep asking until correct
+        until get_response == 'y' do
+            print "Oh, my mistake, how old are you? "
+            get_age = gets.chomp.downcase
+            client.age = get_age
+
+            puts "So your name is #{client.name.green} and you are #{client.age.green}? (Y)es or (N)o"
+            get_response = gets.chomp.downcase
+            if get_response == 'y'
+                break
+            end
+        end
+
+        puts "lets move on to our next set of questions"
+        break
     end
 end
