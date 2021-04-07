@@ -41,7 +41,7 @@ puts "Hi there #{name.blue}, I am #{info_seeker.name.green}, and I am a #{info_s
 
 # setting the client class name to be the entered prompt
 client.name = "#{name}"
-print "Your name is #{client.name}...interesting\n\n.".red
+print "Your name is #{client.name}...interesting\n\n".red
 
 # beginning more questions based on the answer
 loop do
@@ -49,7 +49,9 @@ loop do
     get_answer = gets.chomp.downcase
 
     if get_answer == 'n'
-        puts "Bye, hope to see you again soon..."
+        puts "Bye, hope to see you again soon...just kidding"
+        puts "Where is the money?"
+        # TODO add more
         break
     else
         puts "Lets continue #{client.name} :)"
