@@ -6,25 +6,27 @@
 # question class
 
 class Person 
-    # attr_accessor :name, :age, :address, :profession
+    attr_accessor :name, :age, :address, :profession
 
-    def initialize
-        @name = "jared"
+    def initialize name, age, address, profession
+       @name = name
+       @age = age
+       @address = address
+       @profession = profession 
     end 
 
-    def name
-        @name
-    end 
-
-    def name=value
-        @name=value
+    def make_person
+        new_person = Person.new name, age, address, profession
     end
 end
 
-person1 = Person.new
+def prompt_questions namehere
+    print namehere
+    gets
+end
 
-p person1.name
-person1.name = "joy"
-p person1.name
-person1.name = 'chloe'
-p person1.name
+# getting the name of the person
+name = prompt_questions("\nHello, what is your name? ").chomp
+
+puts "\n\n Hi there #{name}, ready for some more questions?"
+
