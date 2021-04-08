@@ -82,7 +82,32 @@ loop do
         puts "So let me clarify the information that I have:"
         print "Your name is #{client.name.green}\n"
         print "Your age is #{client.age.green}\n"
-        puts "Great, lets move on to our next set of questions"
+        puts "Now, lets move on to our next set of questions\n"
+
+        print "What was your profession before coming here? "
+        get_profession = gets.chomp.downcase
+
+        client.profession = get_profession
+
+        puts "So you're telling me, you were a #{client.profession.green}? (Y)es or (N)o"
+        get_profession_clarification = gets.chomp.downcase
+
+        if get_profession_clarification == 'n'
+            until get_profession_clarification == 'y' do
+                print "My mistake, what were you doing before this? "
+                get_profession = gets.chomp.downcase
+                client.profession = get_profession
+
+                puts "So you're telling me, you were a #{client.profession.green}? (Y)es or (N)o"
+                get_profession_clarification = gets.chomp.downcase
+                if get_profession_clarification == "y"
+                    break
+                end
+            end
+        end
+
+        puts "Great, lets move on..."
+
         break
     end
 end
