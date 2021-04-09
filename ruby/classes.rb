@@ -88,3 +88,23 @@ grumpy.new_name="Steven The Bird"
 grumpy.new_adj="tired"
 grumpy.flap
 
+# ======================================
+puts "============= Dessert Class Zone below ================="
+
+class Dessert
+
+    def initialize name, sugar_content
+        @name = name
+        @sugar_content = sugar_content
+
+        puts "The name is: #{@name} and this is the sugar content: #{@sugar_content}"
+    end
+
+    def eat       
+        puts "Yum! This #{@name} is so delicious!"
+    end
+
+end
+
+pie = Dessert.new("chocolate chip cookie", "very sugary")
+pie.eat
