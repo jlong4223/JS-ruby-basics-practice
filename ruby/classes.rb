@@ -143,3 +143,46 @@ end
 i = IceCream.new("chocolate", "sweet", "cookie dough, pretzels")
 i.toppings
 i.eat
+
+
+# =========== Universe Class info below ================ #
+
+class Universe
+    
+    def initialize item1, item2, item3
+        @items = [item1, item2, item3]
+        @expanding = true
+        @conservation = true
+        @crunched = false
+    end
+
+    def see_all_things
+        puts "#{@items}"
+    end
+
+    def create new_item
+        @new_item = new_item
+        # adding to the items array or replacing a random item with the new one
+        @conservation == true ? @items[rand(@items.size - 1)] = new_item : @items.push(new_item)
+
+        puts "#{@items}"
+    end
+
+    def check_density
+        # TODO change expanding to false it @items reaches 10
+
+    end
+end
+
+universe = Universe.new("sun", "earth", "moon")
+universe.see_all_things
+
+universe.create("pluto")
+universe.see_all_things
+
+universe.create('mosquito')
+universe.create('mosquito')
+universe.create('mosquito')
+
+parallel = Universe.new('mars', 'jupiter', 'saturn')
+parallel.see_all_things
