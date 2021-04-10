@@ -142,3 +142,4 @@ end
 
 i = IceCream.new("chocolate", "sweet", "cookie dough, pretzels")
 i.toppings
+i.eat
