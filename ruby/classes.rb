@@ -92,7 +92,6 @@ grumpy.flap
 puts "============= Dessert Class Zone below ================="
 
 class Dessert
-
     def initialize name, sugar_content
         @name = name
         @sugar_content = sugar_content
@@ -103,8 +102,43 @@ class Dessert
     def eat       
         puts "Yum! This #{@name} is so delicious!"
     end
-
 end
 
-pie = Dessert.new("chocolate chip cookie", "very sugary")
-pie.eat
+# the below classes inherit everything from Dessert
+class Pie < Dessert
+    def initialize(name, sugar_content)
+        @name = name
+    end
+end
+
+class DeepFriedDessert < Dessert
+    # def initialize(name, sugar_content)
+    #     @name = name
+    # end
+    def eat
+        puts "Yum! This #{@name} is sooo ...ack! ugh! *heart-attack*"
+    end
+end
+
+p = Pie.new('cobbler', 'sweet')
+# can call the eat method even though not directly in the Pie class bc it is inherited from Dessert
+p.eat
+
+d = DeepFriedDessert.new('oreos', 'salty')
+# calling the eat here looks within the direct class first before moving up the chain to the Dessert class
+d.eat
+
+class IceCream < Dessert
+    def initialize name, sugar_content, toppings
+        @toppings = toppings
+        # using super to grab the initalize actions for the two variables within Dessert
+        super(name, sugar_content)
+    end
+
+    def toppings
+        puts "The toppings are: #{@toppings}"
+    end
+end
+
+i = IceCream.new("chocolate", "sweet", "cookie dough, pretzels")
+i.toppings
