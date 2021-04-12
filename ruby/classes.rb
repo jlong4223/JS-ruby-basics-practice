@@ -148,7 +148,7 @@ i.eat
 # =========== Universe Class info below ================ #
 
 class Universe
-    
+
     def initialize item1, item2, item3
         @items = [item1, item2, item3]
         @expanding = true
@@ -168,9 +168,14 @@ class Universe
         puts "#{@items}"
     end
 
-    def check_density
-        # TODO change expanding to false it @items reaches 10
 
+    def check_density
+# TODO change expanding to false it @items reaches 10
+    end
+
+    def energy_conservation
+        @items.uniq() ? @conservation == false : @conservation == true
+        puts "conservation is: #{@conservation}"
     end
 end
 
@@ -186,3 +191,9 @@ universe.create('mosquito')
 
 parallel = Universe.new('mars', 'jupiter', 'saturn')
 parallel.see_all_things
+parallel.energy_conservation
+
+all_the_same = Universe.new('venus', 'venus', 'venus')
+all_the_same.see_all_things
+# TODO figure out how to change the value
+all_the_same.energy_conservation
