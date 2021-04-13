@@ -122,6 +122,24 @@ function getGrade(s1, s2, s3) {
 
 getGrade(60, 93, 93);
 
+console.log("switch case below as an alternative to ternary");
+function getGradeAgain(s1, s2, s3) {
+  var avg = (s1 + s2 + s3) / 3;
+  switch (true) {
+    case avg >= 90:
+      return "A";
+    case avg >= 80:
+      return "B";
+    case avg >= 70:
+      return "C";
+    case avg >= 60:
+      return "D";
+    default:
+      return "F";
+  }
+}
+
+console.log(getGradeAgain(60, 93, 93));
 // ======================================
 // a function that converts a string to uppercase
 
