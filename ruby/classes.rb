@@ -174,8 +174,9 @@ class Universe
     end
 
     def energy_conservation
-        @items.uniq() ? @conservation == false : @conservation == true
-        puts "conservation is: #{@conservation}"
+        # TODO figure out why this always returns false
+        change = @items.uniq() ? @conservation == false : @conservation == true
+        puts "conservation is: #{change}"
     end
 end
 
