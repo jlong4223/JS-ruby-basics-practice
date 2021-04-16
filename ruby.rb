@@ -260,3 +260,10 @@ def twice_as_old(dad, son)
 end
 
 twice_as_old 30,16
+
+# another way: using .abs to print the absolute value of the number
+def twice_as_old_v2(dad, son)
+  (dad - son * 2).abs
+end
+
+puts twice_as_old_v2(30,10)
