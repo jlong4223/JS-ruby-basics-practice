@@ -247,3 +247,16 @@ def countSheeps array
 end
 
 puts countSheeps([true, false, true, true, true, false, nil, true])
+
+# ==============================================
+# Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
+
+def twice_as_old(dad, son)
+    doubledSon = son * 2
+    puts "the doubled son age: #{doubledSon}"
+    
+    difference = doubledSon > dad ? doubledSon - dad : dad - doubledSon
+    puts difference
+end
+
+twice_as_old 30,16
