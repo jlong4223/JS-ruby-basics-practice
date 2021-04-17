@@ -43,3 +43,32 @@ func removeExclamationMarks(word: String) -> String {
 }
 
 print(removeExclamationMarks(word:("Jared! is! removing! exclamation! characters.!")))
+
+// ========================================
+// calculating home office total
+// creating an empty array that is expecting integers
+var prices = [Int]()
+
+var mouse = 99
+var keyboard = 99
+var m1_small = 1300
+var m1_big = 1900
+var moniter = 490
+var speakers = 40
+var big_battery = 60
+var ipads = 600 * 2
+var desk = 1400
+var old_macs = 1000 * 2
+var headset = 20
+var mac_cable_adapter = 32 
+var mouse_pads = 15 * 2
+var camera = 90
+
+// when appending multiple items to array, need to include contentsOf:[items being appended]
+prices.append(contentsOf: [mouse, keyboard, m1_big, m1_small, moniter, speakers, big_battery, ipads, desk, old_macs, headset, mac_cable_adapter, mouse_pads, camera])
+
+print(prices)
+
+// adding all the numbers in the array
+let total = prices.reduce(0, +)
+print(total)
