@@ -281,17 +281,19 @@ m1_big = 1900
 moniter = 490
 speakers = 40
 big_battery = 60
-ipads = 600
+ipads = 600 * 2
 desk = 1400
-old_macs = 1000
+old_macs = 1000 * 2
 headset = 20
 mac_cable_adapter = 32 
+mouse_pads = 15 * 2
+camera = 90
 
-prices.append(mouse, keyboard, m1_small, m1_big, moniter, speakers, big_battery, ipads, desk, old_macs, headset, mac_cable_adapter)
+prices.append(mouse, keyboard, m1_small, m1_big, moniter, speakers, big_battery, ipads, desk, old_macs, headset, mac_cable_adapter, mouse_pads, camera)
 p prices
 
 total = prices.inject(0){|price, x| price + x}
-puts total
+puts "total v1: #{total}"
 
 total_v2 = prices.inject(:+)
 puts "total v2: #{total_v2}"
