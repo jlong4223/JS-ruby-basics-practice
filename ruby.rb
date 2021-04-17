@@ -267,3 +267,31 @@ def twice_as_old_v2(dad, son)
 end
 
 puts twice_as_old_v2(30,10)
+
+# =============================================
+# calculating the total of my home office
+
+prices = []
+p prices
+
+mouse = 99
+keyboard = 99
+m1_small = 1300
+m1_big = 1900
+moniter = 490
+speakers = 40
+big_battery = 60
+ipads = 600
+desk = 1400
+old_macs = 1000
+headset = 20
+mac_cable_adapter = 32 
+
+prices.append(mouse, keyboard, m1_small, m1_big, moniter, speakers, big_battery, ipads, desk, old_macs, headset, mac_cable_adapter)
+p prices
+
+total = prices.inject(0){|price, x| price + x}
+puts total
+
+total_v2 = prices.inject(:+)
+puts "total v2: #{total_v2}"
