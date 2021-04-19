@@ -234,8 +234,8 @@ twiceAsOld(30, 16);
 // splitting the text from the numbers to create seperate arrays
 let inputText = "'foofo21' 'bar432' 'foobar12345'";
 function processText(inputText) {
-  var output = [];
-  var json = inputText.split(" ");
+  let output = [];
+  let json = inputText.split(" ");
   json.forEach(function (item) {
     output.push(item.replace(/\'/g, "").split(/(\d+)/).filter(Boolean));
   });
