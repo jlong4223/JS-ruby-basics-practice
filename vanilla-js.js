@@ -229,3 +229,17 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 twiceAsOld(30, 16);
 
 // TODO transfer to ruby, python, & swift?
+
+// ===========================================
+// splitting the text from the numbers to create seperate arrays
+let inputText = "'foofo21' 'bar432' 'foobar12345'";
+function processText(inputText) {
+  var output = [];
+  var json = inputText.split(" ");
+  json.forEach(function (item) {
+    output.push(item.replace(/\'/g, "").split(/(\d+)/).filter(Boolean));
+  });
+  return output;
+}
+
+console.log(JSON.stringify(processText(inputText)));
