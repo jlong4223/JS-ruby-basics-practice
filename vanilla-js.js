@@ -243,3 +243,20 @@ function processText(inputText) {
 }
 
 console.log(JSON.stringify(processText(inputText)));
+
+// =======================================
+// filling in the rest of an array with defined values using the array.fill()
+
+// will not work as there are not values for it to replace
+const arrayOne = ["this", "is"];
+console.log(arrayOne.fill("an-array", 2, 2));
+
+// works
+const array1 = [1, 2, 3, 4];
+// fill with 0 from position 2 until position 4
+console.log(array1.fill(0, 2, 4));
+// expected output: [1, 2, 0, 0]
+
+const array2 = [0, 0, 0, 0];
+console.log(array2.fill(1, 2, 4));
+// expected output [0, 0, 1, 1]
