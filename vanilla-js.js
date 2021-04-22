@@ -228,8 +228,6 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 
 twiceAsOld(30, 16);
 
-// TODO transfer to ruby, python, & swift?
-
 // ===========================================
 // splitting the text from the numbers to create seperate arrays
 let inputText = "'foofo21' 'bar432' 'foobar12345'";
