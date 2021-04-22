@@ -87,3 +87,18 @@ def count_again(sheep):
     return sheep.count(True)
 
 print(count_again([True, False, True]))
+
+
+# ==============================================
+# Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
+# ternary in python: [on_true] if [expression] else [on_false] 
+
+def twice_as_old(dad_years_old, son_years_old):
+    pass
+    doubled_son = son_years_old * 2
+
+    difference = doubled_son - dad_years_old if doubled_son > dad_years_old  else dad_years_old - doubled_son
+
+    print(difference)
+
+twice_as_old(30, 16)
