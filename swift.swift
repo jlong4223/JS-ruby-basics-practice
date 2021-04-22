@@ -72,3 +72,33 @@ print(prices)
 // adding all the numbers in the array
 let total = prices.reduce(0, +)
 print(total)
+
+// ============================================
+// Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
+
+print("=== v1 AGE DIFF: ")
+
+func ageDiff(sonsAge: Int, dadsAge: Int) -> Int{
+  var doubledSon = sonsAge * 2
+
+  if(doubledSon > dadsAge){
+    return(doubledSon-dadsAge)
+  } else{
+    return(dadsAge-doubledSon)
+  }
+}
+
+print(ageDiff(sonsAge: 16, dadsAge: 30))
+
+// ======== ternary with swift:
+print("=== v2 AGE DIFF: ")
+
+func ageDiffTwo(sonsAge: Int, dadsAge: Int) -> Int{
+  var doubledSon = sonsAge * 2
+
+  var difference = (doubledSon > dadsAge) ? (doubledSon-dadsAge) : (dadsAge-doubledSon)
+  
+  return(difference)
+}
+
+print(ageDiffTwo(sonsAge: 16, dadsAge: 30))
