@@ -1,3 +1,4 @@
+// let is what const is in javascript; var is what let is in javascript
 // ========================
 func sayName(name: String)-> String{
   return(name)
@@ -71,7 +72,7 @@ print(prices)
 
 // adding all the numbers in the array
 let total = prices.reduce(0, +)
-print(total)
+print("the total is: ", total)
 
 // ============================================
 // Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
@@ -79,7 +80,7 @@ print(total)
 print("=== v1 AGE DIFF: ")
 
 func ageDiff(sonsAge: Int, dadsAge: Int) -> Int{
-  var doubledSon = sonsAge * 2
+  let doubledSon = sonsAge * 2
 
   if(doubledSon > dadsAge){
     return(doubledSon-dadsAge)
@@ -94,9 +95,9 @@ print(ageDiff(sonsAge: 16, dadsAge: 30))
 print("=== v2 AGE DIFF: ")
 
 func ageDiffTwo(sonsAge: Int, dadsAge: Int) -> Int{
-  var doubledSon = sonsAge * 2
+  let doubledSon = sonsAge * 2
 
-  var difference = (doubledSon > dadsAge) ? (doubledSon-dadsAge) : (dadsAge-doubledSon)
+  let difference = (doubledSon > dadsAge) ? (doubledSon-dadsAge) : (dadsAge-doubledSon)
   
   return(difference)
 }
