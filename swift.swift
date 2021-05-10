@@ -103,3 +103,22 @@ func ageDiffTwo(sonsAge: Int, dadsAge: Int) -> Int{
 }
 
 print(ageDiffTwo(sonsAge: 16, dadsAge: 30))
+
+// ===================================
+// Create a function that takes 2 positive integers in form of a string as an input, and outputs the sum (also as a string):
+
+// ====
+var str = ""
+print(str)
+// forcing value to be zero if there is not an int in the str
+var int = Int(str) ?? 0
+print(int)
+
+// ====
+func sumString(a: String, b: String) -> String{
+  var int = (Int(a) ?? 0) + (Int(b) ?? 0)
+  return(String(int))
+}
+
+print("sum func: ", sumString(a: "", b: "3"))
+

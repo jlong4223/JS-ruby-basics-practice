@@ -102,3 +102,18 @@ def twice_as_old(dad_years_old, son_years_old):
     print(difference)
 
 twice_as_old(30, 16)
+
+
+# =================================
+def sum_str(a, b):
+    a = "0" if a == "" else a
+    b = "0" if b == "" else b
+    return(str(int(a) + int(b)))
+
+print(sum_str("", "2"))
+    
+
+def sum_str_v2(a, b):
+    return(str(int(a or 0) + int(b or 0)))
+
+print("sum v2:", sum_str_v2("", "8"))

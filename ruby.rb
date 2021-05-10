@@ -297,3 +297,12 @@ puts "total v1: #{total}"
 
 total_v2 = prices.inject(:+)
 puts "total v2: #{total_v2}"
+
+# =====================================
+# Create a function that takes 2 positive integers in form of a string as an input, and outputs the sum (also as a string):
+
+def sum_str a, b
+  (a.to_i + b.to_i).to_s
+end
+
+p sum_str "", "2"

@@ -258,3 +258,18 @@ console.log(array1.fill(0, 2, 4));
 const array2 = [0, 0, 0, 0];
 console.log(array2.fill(1, 2, 4));
 // expected output [0, 0, 1, 1]
+
+// =======================================
+// Create a function that takes 2 positive integers in form of a string as an input, and outputs the sum (also as a string):
+// *** If either input is an empty string, consider it as zero.
+function sumStr(a, b) {
+  a === "" ? (a = "0") : a;
+  b === "" ? (b = "0") : b;
+  let newA = a;
+  let newB = b;
+
+  let total = parseInt(newA) + parseInt(newB);
+  return total.toString();
+}
+
+console.log(sumStr("", ""));
