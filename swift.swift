@@ -116,9 +116,16 @@ print(int)
 
 // ====
 func sumString(a: String, b: String) -> String{
-  var int = (Int(a) ?? 0) + (Int(b) ?? 0)
+  let int = (Int(a) ?? 0) + (Int(b) ?? 0)
   return(String(int))
 }
 
 print("sum func: ", sumString(a: "", b: "3"))
 
+// ===========================================
+// Write a function that given a floor in the american system returns the floor in the european system.
+
+func findFloor(n: Int) -> Int{
+  return(n > 0 && n <= 12 ? n - 1 : n >= 13 ? n - 2 : n)
+}
+print("floor:",findFloor(n: 13))

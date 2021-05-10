@@ -117,3 +117,11 @@ def sum_str_v2(a, b):
     return(str(int(a or 0) + int(b or 0)))
 
 print("sum v2:", sum_str_v2("", "8"))
+
+# =================================
+# Write a function that given a floor in the american system returns the floor in the european system.
+
+def get_floor_num(n):
+    return(n - 1 if n > 0 and n <= 12 else n - 2 if n >= 13 else n)
+
+print(get_floor_num(13))

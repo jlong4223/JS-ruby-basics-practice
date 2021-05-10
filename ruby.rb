@@ -306,3 +306,14 @@ def sum_str a, b
 end
 
 p sum_str "", "2"
+
+# ======================================
+# Write a function that given a floor in the american system returns the floor in the european system.
+
+def get_floor_num n
+  n > 0 && n <= 13 ? n - 1 : 
+  n > 13 ? n - 2 : 
+  n
+end
+
+puts get_floor_num -1

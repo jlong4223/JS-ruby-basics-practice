@@ -276,7 +276,7 @@ console.log(sumStr("", ""));
 
 // ======================================
 // Write a function that given a floor in the american system returns the floor in the european system.
-// TODO transfer to ruby, python, swift
+
 const getRealFloor = (n) => {
   let floor = n <= 12 && n >= 1 ? n - 1 : n <= 0 ? n : n >= 13 ? n - 2 : n;
   return floor;
