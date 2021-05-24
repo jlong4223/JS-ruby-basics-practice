@@ -302,7 +302,7 @@ console.log(getRealFloorTwo(-2));
 // Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
 // You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
 
-// TODO transfer to swift, python and ruby
+// TODO transfer to swift, python
 
 const litres = (hour) => {
   const amount = hour / 2 - 0.5;

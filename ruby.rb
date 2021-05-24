@@ -317,3 +317,14 @@ def get_floor_num n
 end
 
 puts get_floor_num -1
+
+# ======================================
+# Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+# You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+
+def litres hour 
+  # amount = (hour/2).round()
+  amount = hour <= 1.5 ? 0 : (hour * 0.5).round()
+end
+
+p litres 10
