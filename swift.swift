@@ -129,3 +129,15 @@ func findFloor(n: Int) -> Int{
   return(n > 0 && n <= 12 ? n - 1 : n >= 13 ? n - 2 : n)
 }
 print("floor:",findFloor(n: 13))
+
+
+// ========================================
+//  Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+// You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+
+func findLitres(h: Double) -> Double{
+  var amount = h / 2 - 0.5
+  return(amount.rounded())
+}
+
+print("litres: ", findLitres(h: 11.8))
