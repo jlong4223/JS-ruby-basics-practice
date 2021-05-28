@@ -342,4 +342,17 @@ const evenLast = (numsArray) => {
   return sumAllEvenIdxs * numsArray.pop() || 0;
 };
 
-console.log(evenLast([1, 2, 3, 4]));
+console.log("evenLast: ", evenLast([1, 2, 3, 4]));
+
+// == v2
+const evenLastTwo = (numsArray) => {
+  return (
+    numsArray
+      .map((num, idx) => {
+        return idx % 2 === 0 ? num : 0;
+      })
+      .reduce((num1, num2) => num1 + num2, 0) * numsArray.pop() || 0
+  );
+};
+
+console.log("v2: ", evenLastTwo([1, 2, 3, 4]));
