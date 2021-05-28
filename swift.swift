@@ -141,3 +141,15 @@ func findLitres(h: Double) -> Double{
 }
 
 print("litres: ", findLitres(h: 11.8))
+
+
+// ========================================
+// Given a list of integers, determine whether the sum of its elements is odd or even.
+
+func oddOrEven(array: Array<Int>) -> String{
+  var total = array.reduce(0, +)
+
+  return total % 2 == 0 ? "even" : "odd"
+}
+
+print(oddOrEven(array: [2, 2]))

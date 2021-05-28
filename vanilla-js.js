@@ -312,3 +312,16 @@ const litres = (hour) => {
 };
 
 console.log(litres(11.8));
+
+// ==========================================
+// Given a list of integers, determine whether the sum of its elements is odd or even.
+
+// TODO transfer to python
+
+const oddEvenTwo = (array) => {
+  const getArrayTotal = array.reduce((num1, num2) => num1 + num2, 0);
+
+  return getArrayTotal % 2 === 0 ? "even" : "odd";
+};
+
+console.log(oddEvenTwo([2, 2]));

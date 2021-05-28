@@ -328,3 +328,12 @@ def litres hour
 end
 
 p litres 10
+
+# =============================================
+# Given a list of integers, determine whether the sum of its elements is odd or even.
+
+def odd_or_even array
+  total = array.sum % 2 === 0 ? "even" : "odd"
+end
+
+puts odd_or_even([2, 2])
