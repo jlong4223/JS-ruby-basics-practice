@@ -325,3 +325,21 @@ const oddEvenTwo = (array) => {
 };
 
 console.log(oddEvenTwo([2, 2]));
+
+// ==========================================
+// TODO transfer to ruby, python, swift
+// Given a sequence of integers, return the sum of all the integers that have an even index, multiplied by the integer at the last index.
+// Indices in sequence start from 0.
+// If the sequence is empty, you should return 0.
+
+const evenLast = (numsArray) => {
+  const allEvenIdxs = numsArray.map((num, idx) => {
+    return idx % 2 === 0 ? num : 0;
+  });
+
+  const sumAllEvenIdxs = allEvenIdxs.reduce((num1, num2) => num1 + num2, 0);
+
+  return sumAllEvenIdxs * numsArray.pop() || 0;
+};
+
+console.log(evenLast([1, 2, 3, 4]));
